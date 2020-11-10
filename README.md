@@ -11,7 +11,7 @@ memory management and how it wasn't done for me anymore. My main reason for lear
 #### BetterPortals
 After this, I returned to plugin development. I had an idea for a plugin that let you see through portals, and created it over the course of about a week. This is [BetterPortals](https://github.com/Lauriethefish/BetterPortals). This was the first time I published my code to github.
 
-The code was much better than what I had created before, and was commented well so that I would be able to understand it later on. The project gained some traction, and has now risen to nearly 3000 downloads, 8 months after release.
+The code was much better than what I had created before, and was commented well so that I would be able to understand it later on. The project gained some traction, and has now risen to nearly 4000 downloads, 9 months after release.
 As of now, I am still maintaining and updating BetterPortals to new minecraft versions, and I will keep doing this as long as I can.
 
 #### Beat Saber Modding
