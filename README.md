@@ -1,23 +1,51 @@
-Hi, I'm an amateur developer who loves programming.
+**Hi, I'm a developer working on several open-source projects you might be interested in :)**
 
-## Learning to code
-I learnt to code by myself, mostly through Scratch and then later Python. After some time, I started to learn C#, and later Java, with the goal of making Minecraft Bukkit plugins.
-This went well, and a few months later I had created a minigame (admittedly a terribly coded one) for a few friends.
+Do check out a few highlights below.
 
-#### C++
-A while later, I got bored of making plugins and tried my hand at C++ development. I was very confused at first at how weirdly the language worked, but I soon understood
-memory management and how it wasn't done for me anymore. My main reason for learning C++ was to make OpenGL applications, although I didn't end up doing much of this in the end.
+If you're particularly enamoured of a project, then consider [sponsoring me](https://github.com/sponsors/Lauriethefish).
+It really means a lot - it helps me justify spending time maintaining projects.
 
-#### BetterPortals
-After this, I returned to plugin development. I had an idea for a plugin that let you see through portals, and created it over the course of about a week. This is [BetterPortals](https://github.com/Lauriethefish/BetterPortals). This was the first time I published my code to github.
+## Stuff I maintain at the moment
+### ModsBeforeFriday
 
-The code was much better than what I had created before, and was commented well so that I would be able to understand it later on. The project gained some traction, and has now risen to over 20,000 downloads.
+[ModsBeforeFriday](https://github.com/Lauriethefish/ModsBeforeFriday) (or MBF, to be extra confusing) is a modding tool for Beat Saber on
+Meta Quest headsets. Its aim is to streamline the process of mod installation, such that you can get your modded game up and running in only a couple
+of clicks! 
 
-#### Beat Saber Modding
-In the meanwhile, I was starting to get into playing the game [Beat Saber](https://beatsaber.com/) on the Oculus Quest. I was having a lot of fun playing custom levels, and after a while I thought I would try to create my own mods. This took a while for me to learn, mostly due to the lack of documentation and, at the time, confusing setup. But eventually I figured it out and created a few mods.
+MBF automatically downgrades the game, installs the modloader and all the core mods that you need to get started. It runs entirely within a web browser,
+so you don't even need to install anything on your PC.
+It's written with a Rust backend, and TypeScript + React frontend, and accesses your Quest via WebUSB.
 
-#### QuestPatcher
+### QuestPatcher
 
-In the early days of Gorilla Tag modding, I make a small tool for modding il2cpp applications on the Oculus Quest and Oculus Quest 2. This is [QuestPatcher](https://github.com/Lauriethefish/QuestPatcher). It has now reached over 100,000 downloads. 
+In the early days of Gorilla Tag modding, I make a small tool for modding il2cpp applications on the Oculus Quest and Oculus Quest 2. This is [QuestPatcher](https://github.com/Lauriethefish/QuestPatcher). It has now reached over 900,000 downloads. 
 
-The QMOD format used in QuestPatcher was later adopted by [BMBF](https://bmbf.dev/), the primary modding tool for Beat Saber on the quest.
+The QMOD format used in QuestPatcher was later adopted by [BMBF](https://bmbf.dev/) (which is now defunct) and MBF, seen above.
+QMOD files can be easily manipulated using the [QuestPatcher.QMod](https://github.com/Lauriethefish/QuestPatcher.QMod) NuGet package.
+
+QuestPatcher is now mostly used by Beat Saber mod developers who need a convenient desktop interface for mod installation.
+
+### NandroidFS
+
+[NandroidFS](https://github.com/Lauriethefish/nandroidfs) is a filesystem for Windows which allows Android devices connected to your PC via the Android Debug Bridge to be mounted as though they were a regular drive connected to your PC. (with a drive letter for each device)
+This is in contrast to the Windows Explorer MTP integration, which is slow and clunky, and doesn't allow other applications to treat the Android device
+as a regular drive (it's just for GUI file management).
+
+NandroidFS is not a kernel mode driver, but instead uses Dokan to allow filesystem-in-user-space.
+
+## Other cool things I've made
+
+### OCR ERL Interpreter
+
+OCR Exam Reference Language (ERL) is a pseudocode language used for the OCR GCSE exam in Computer Science. Despite being "pseudocode", the language
+is fairly formally defined, so it is possible to write an interpreter that can run ERL code.
+
+My [ERL interpreter](https://github.com/Lauriethefish/ocr-erl) isn't quite fully featured, but focuses on performance, using a stack-based VM
+to achieve very efficient execution.
+
+### Factorio Computer
+
+A bit random, but a while back I made a computer in the video game Factorio, alongside a compiler that can be used to write programs
+for the computer in a high level language called LFL. (Laurie's Factorio language).
+
+[Here](https://github.com/Lauriethefish/FactorioComputer) it is, if you're interested.
